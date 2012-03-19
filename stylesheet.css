@@ -1,0 +1,76 @@
+body {
+	text-align: center;
+	min-width: 40em;
+	min-height: 36em;
+}
+
+/* Four cards per row on a 15in MacBook Pro */
+.scan {
+    width: 220px;
+    height: 306px;
+    padding-right: 2px;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+nav h1, button {
+	font-family: Arnoldboecklin, fantasy;
+}
+
+button {
+	width: 100%;
+	padding: 0.5em 0 0.5em 0;
+	font-size: 150%;
+}
+
+a, a:visited { color: black; }
+
+@media screen {
+	nav, footer {
+		padding: 1em;
+	}
+
+	nav {
+		position: fixed;
+		float: left;
+	}
+
+	nav p {
+		font-size: 80%;
+	}
+
+	.fail { color: red; }
+	.warn { color: orange; }
+	.info { color: black; }
+	.success { color: green; }
+	.cardTotal { color: black; }
+
+	footer {
+		float: right;
+		margin-left: 15em;
+		margin-right: 4em;
+	}
+}
+
+@media print {
+	html, body { margin: 0; padding: 0; }
+
+	body { text-align: left; }
+
+	nav, article { display: none; }
+
+	@page {
+		size: landscape;
+		margin: 0;
+	}
+
+	/* Cards in sleeves to print with ease */
+	.scan {
+		width: 230px;
+		height: 320px;
+		padding-right: 2px;
+	}
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Cheatmang</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="Andrew Pennebaker" />
+	<link rel="favorites icon" href="favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+<body onload='fireUpdate()'>
+<nav>
+
+<h1><a href="">Cheatmang</a></h1>
+<p><a href="http://www.yellosoft.us/">Andrew Pennebaker</a></p>
+<p>Data from <a href="http://daccg.com/">CCG Card Search</a></p>
+<textarea cols="30" id="deckText" name="deck" rows="20">// pewpewpew
+// https://gist.github.com/952776
+
+// Lands
+20 Mountain
+
+// Enchantments
+1 Curse of the Pierced Heart
+
+// Instants
+4 Lightning Bolt
+1 Harvest Pyre
+
+// Sorceries
+4 Lava Spike
+4 Chain Lightning
+
+// Creatures
+4 Goblin Fireslinger
+4 Grim Lavamancer
+4 Kiln Fiend
+1 Immolating Souleater
+3 Fiery Hellhound
+4 Chandra's Spitfire
+4 Manic Vandal
+2 Storm Entity</textarea><br/>
+<button onclick="fireUpdate()">Update</button>
+<p id="fail"></p>
+<p id="warn"></p>
+<p id="info">Print in Landscape mode.</p>
+<p id="success"></p>
+<p id="cardTotal"></p>
+
+</nav>
+<footer>
+</footer>
+<script type="text/javascript" src="jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="cheatmang.js"></script>
+</body>
+</html>
