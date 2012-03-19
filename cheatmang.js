@@ -11,7 +11,7 @@ exports.api = api;
 function manaCost(name, callback) {
 	console.log("Host: " + host);
 
-	var path = api + name;
+	var path = api + name.slice(0,name.length-1);
 
 	console.log("Path: " + path);
 
